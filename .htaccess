@@ -1,0 +1,8 @@
+Options All -Indexes
+RewriteEngine On
+
+RewriteRule ^faq(.*)$ index.php?page=faq [L]
+RewriteRule ^reviews(.*)$ index.php?page=reviews [L]
+RewriteRule ^user/me(.*)$ index.php?page=profile [L]
+RewriteRule ^top(.*)$ index.php?page=top [L]
+RewriteRule ^user/(.*)$ index.php?id=$1 [L]
